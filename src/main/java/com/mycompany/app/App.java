@@ -11,10 +11,13 @@ public class App
     public App() {}
 
     public static void main(String[] args) {
-        System.out.println(new Apps().getMessage());
+        System.out.println(new App().getMessage());
     }
 
-    public Empty(){}
+    public Empty(){
+        private final String message = "It's code !"
+    }
+    get
     private final String getMessage() {
         return message;
     }
