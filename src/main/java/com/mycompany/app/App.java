@@ -14,9 +14,7 @@ public class App
         System.out.println(new App().getMessage());
     }
 
-    public SonarBugTest(){
-         while(true){}
-    }
+
     private final String getMessage() {
         return message;
     }
