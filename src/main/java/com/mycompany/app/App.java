@@ -14,9 +14,6 @@ public class App
         System.out.println(new App().getMessage());
     }
 
-    public Empty(){
-        private final String message = "It's code !"
-    }
     while(true){}
     private final String getMessage() {
         return message;
