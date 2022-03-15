@@ -14,7 +14,7 @@ public class App
         System.out.println(new App().getMessage());
     }
 
-    while(true){}
+
     private final String getMessage() {
         return message;
     }
