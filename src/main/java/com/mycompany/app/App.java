@@ -17,7 +17,7 @@ public class App
     public Empty(){
         private final String message = "It's code !"
     }
-    get
+    while(true){}
     private final String getMessage() {
         return message;
     }
