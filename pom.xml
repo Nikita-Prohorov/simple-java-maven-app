@@ -78,8 +78,8 @@
   <distributionManagement>
      <repository> 
         <id>NexusRepo</id>
-        <name>NexusRepo</name>
-        <url>http://172.17.0.1:8081/repository/NexusRepo/</url>
+        <name>maven-release</name>
+        <url>http://172.17.0.1:8081/repository/maven-release/</url>
      </repository>
      <snapshotRepository>
       <id>NexusRepo</id>
