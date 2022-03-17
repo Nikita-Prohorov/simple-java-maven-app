@@ -4,7 +4,7 @@
   <groupId>com.mycompany.app</groupId>
   <artifactId>my-app</artifactId>
   <packaging>jar</packaging>
-  <version>1.0</version>
+  <version>1.0-SNAPSHOT</version>
   <name>my-app</name>
   <url>http://maven.apache.org</url>
   <dependencies>
@@ -78,8 +78,8 @@
   <distributionManagement>
      <repository> 
         <id>NexusRepo</id>
-        <name>DlyaVItaly</name>
-        <url>http://172.17.0.1:8081/repository/DlyaVItaly/</url>
+        <name>maven-releases</name>
+        <url>http://172.17.0.1:8081/repository/maven-releases/</url>
      </repository>
      <snapshotRepository>
       <id>NexusRepo</id>

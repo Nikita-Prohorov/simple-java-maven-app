@@ -8,7 +8,6 @@
   </servers>
   <mirrors>
     <mirror>
-      <!--This sends everything else to /public -->
       <id>NexusRepo</id>
       <mirrorOf>*</mirrorOf>
       <url>http://172.17.0.1:8081/repository/NexusRepo/</url>
