@@ -78,8 +78,8 @@
   <distributionManagement>
      <repository> 
         <id>NexusRepo</id>
-        <name>maven-releases</name>
-        <url>http://172.17.0.1:8081/repository/maven-releases/</url>
+        <name>DlyaVItaly</name>
+        <url>http://172.17.0.1:8081/repository/DlyaVItaly/</url>
      </repository>
      <snapshotRepository>
       <id>NexusRepo</id>
