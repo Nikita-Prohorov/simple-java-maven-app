@@ -22,6 +22,16 @@
     <pluginManagement>
       <plugins>
         <plugin>
+         <groupId>org.sonatype.plugins</groupId>
+         <artifactId>nexus-staging-maven-plugin</artifactId>
+         <version>1.6.3</version>
+         <extensions>true</extensions>
+         <configuration>
+          <serverId>nexus</serverId>
+          <nexusUrl>http://172.17.0.1:8081/</nexusUrld>
+         </configuration>
+        </plugin>
+        <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.8.1</version>
@@ -66,4 +76,10 @@
       </plugin>
     </plugins>
   </build>
+  <distributionManagement>
+     <snapshotRepository>
+      <id>nexus</id>
+      <url>http://172.17.0.1:8081/repository/NexusRepo/</url>
+     </snapshotRepository>
+  </distributionManagement>
 </project>
