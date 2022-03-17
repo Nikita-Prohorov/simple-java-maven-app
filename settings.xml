@@ -12,7 +12,7 @@
       <id>NexusRepo</id>
       <active>true</active>
       <protocol>http</protocol>
-      <host>127.0.0.1/repository/NexusRepo/</host>
+      <host>172.17.0.1/repository/NexusRepo/</host>
       <port>8081</port>
       <username>${jenkins}</username>
       <password>${JENKINS_PASSWORD}</password>
