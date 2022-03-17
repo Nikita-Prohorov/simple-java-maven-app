@@ -11,7 +11,7 @@
        <mirror>
         <id>iternal-repository</id>
         <name>NexusRepository</name>
-        <url>http://172.17.0.1:8081/#admin/repository/repositories:NexusRepo</url>
+        <url>http://172.17.0.1:8081/repository/NexusRepo</url>
         <mirrorOf>*</mirrorOf>
        </mirror>
      </mirrors>
