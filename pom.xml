@@ -27,7 +27,7 @@
          <version>1.6.3</version>
          <extensions>true</extensions>
          <configuration>
-           <serverId>nexus</serverId>
+           <serverId>NexusRepo</serverId>
            <nexusUrl>http://172.17.0.1:8081/</nexusUrl>
          </configuration>
         </plugin>
@@ -78,7 +78,7 @@
   </build>
   <distributionManagement>
      <snapshotRepository>
-      <id>nexus</id>
+      <id>NexusRepo</id>
       <url>http://172.17.0.1:8081/repository/NexusRepo/</url>
      </snapshotRepository>
   </distributionManagement>
