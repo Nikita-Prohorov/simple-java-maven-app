@@ -14,11 +14,6 @@
       <version>4.13.2</version>
       <scope>test</scope>
     </dependency>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.10</version>
-    </dependency>
   </dependencies>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -82,6 +77,11 @@
     </plugins>
   </build>
   <distributionManagement>
+     <repository> 
+        <id>NexusRepo</id>
+        <name>NexusRepo</name>
+        <url>http://172.17.0.1:8081/repository/NexusRepo/</url>
+     </repository>
      <snapshotRepository>
       <id>NexusRepo</id>
       <url>http://172.17.0.1:8081/repository/maven-snapshots/</url>
