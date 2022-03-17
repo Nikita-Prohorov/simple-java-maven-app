@@ -2,14 +2,14 @@
     xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 https://maven.apache.org/xsd/settings-1.0.0.xsd">
     <servers>
       <server>
-         <id>nexus</id>
+         <id>localhost</id>
          <username>${jenkins}</username>
          <password>${JENKINS_PASSWORD}</password>
       </server>
     </servers>
     <mirrors>
        <mirror>
-        <id>iternal-repository</id>
+        <id>NexusRepo</id>
         <name>NexusRepo</name>
         <url>http://172.17.0.1:8081/repository/NexusRepo</url>
         <mirrorOf>*</mirrorOf>
