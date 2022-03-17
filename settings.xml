@@ -3,8 +3,8 @@
     <servers>
       <server>
          <id>nexus-snapshot</id>
-         <username>jenkins</username>
-         <password>JENKINS_PASSWORD</password>
+         <username>${jenkins}</username>
+         <password>${JENKINS_PASSWORD}</password>
       </server>
     </servers>
     <mirrors>
