@@ -4,7 +4,7 @@
   <groupId>com.mycompany.app</groupId>
   <artifactId>my-app</artifactId>
   <packaging>jar</packaging>
-  <version>1.0-1.0-20220317.135811-1</version>
+  <version>1.0</version>
   <name>my-app</name>
   <url>http://maven.apache.org</url>
   <dependencies>
@@ -13,6 +13,11 @@
       <artifactId>junit</artifactId>
       <version>4.13.2</version>
       <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.10</version>
     </dependency>
   </dependencies>
   <properties>
