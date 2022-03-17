@@ -7,12 +7,15 @@
          <password>${JENKINS_PASSWORD}</password>
       </server>
     </servers>
-    <mirrors>
-       <mirror>
-        <id>NexusRepo</id>
-        <name>NexusRepo</name>
-        <url>http://172.17.0.1:8081/repository/NexusRepo/</url>
-        <mirrorOf>https://github.com/Nikita-Prohorov/simple-java-maven-app/tree/nprohcarau</mirrorOf>
-       </mirror>
-     </mirrors>
+    <proxy>
+      <id>NexusRepo</id>
+      <active>true</active>
+      <protocol>http</protocol>
+      <host>127.0.0.1/repository/NexusRepo/</host>
+      <port>8081</port>
+      <username>${jenkins}</username>
+      <password>${JENKINS_PASSWORD}</password>
+      <nonProxyHosts>https://github.com/Nikita-Prohorov/simple-java-maven-app/tree/nprohcarau</nonProxyHosts>
+    </proxy>
+  </proxies>
 </settings>
