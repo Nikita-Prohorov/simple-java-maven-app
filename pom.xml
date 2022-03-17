@@ -64,8 +64,6 @@
           </execution>
         </executions>
       </plugin>
-    </plugins>
-    <plugins>
       <plugin>
         <groupId>org.sonatype.plugins</groupId>
         <artifactId>my-app-1.0-SNAPSHOT</artifactId>
