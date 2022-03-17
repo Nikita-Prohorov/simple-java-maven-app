@@ -1,18 +1,37 @@
-<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 https://maven.apache.org/xsd/settings-1.0.0.xsd">
-    <servers>
-      <server>
-         <id>NexusRepo</id>
-         <username>${jenkins}</username>
-         <password>${JENKINS_PASSWORD}</password>
-      </server>
-    </servers>
-    <mirrors>
-      <mirror>
-        <id>NexusRepo</id>
-        <name>NexusRepo</name>
-        <url>https://github.com/Nikita-Prohorov/simple-java-maven-app/tree/nprohcarau</url>
-        <mirrorOf>*</mirrorOf>
-      </mirror>
-    </mirrors>
+<settings>
+  <mirrors>
+    <mirror>
+      <!--This sends everything else to /public -->
+      <id>NexusRepo</id>
+      <mirrorOf>*</mirrorOf>
+      <url>http://172.1.0.1:8081/repository/NexusRepo/</url>
+    </mirror>
+  </mirrors>
+  <profiles>
+    <profile>
+      <id>jenkins</id>
+      <!--Enable snapshots for the built in central repo to direct -->
+      <!--all requests to nexus via the mirror -->
+      <repositories>
+        <repository>
+          <id>central</id>
+          <url>http://central</url>
+          <releases><enabled>true</enabled></releases>
+          <snapshots><enabled>true</enabled></snapshots>
+        </repository>
+      </repositories>
+     <pluginRepositories>
+        <pluginRepository>
+          <id>central</id>
+          <url>http://central</url>
+          <releases><enabled>true</enabled></releases>
+          <snapshots><enabled>true</enabled></snapshots>
+        </pluginRepository>
+      </pluginRepositories>
+    </profile>
+  </profiles>
+  <activeProfiles>
+    <!--make the profile active all the time -->
+    <activeProfile>jenkins</activeProfile>
+  </activeProfiles>
 </settings>
