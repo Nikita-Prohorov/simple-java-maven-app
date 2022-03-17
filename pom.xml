@@ -27,8 +27,8 @@
          <version>1.6.3</version>
          <extensions>true</extensions>
          <configuration>
-          <serverId>nexus</serverId>
-          <nexusUrl>http://172.17.0.1:8081/</nexusUrld>
+           <serverId>nexus</serverId>
+           <nexusUrl>http://172.17.0.1:8081/</nexusUrld>
          </configuration>
         </plugin>
         <plugin>
